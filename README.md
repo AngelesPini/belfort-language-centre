@@ -3,7 +3,7 @@ Belfort Language Centre - Project for Publica Comunicaciones
 
 
 
-##Dependencies
+## Dependencies
 _ Bootstrap, Sass, Glider_
 
 ```
