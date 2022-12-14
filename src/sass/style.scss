@@ -1,0 +1,801 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$verdeOscuro:#347C52;
+$verdeClaro:#6DB32D;
+$naranja:#F3B114;
+
+// generales
+
+.navbar{
+    padding: 24px 110px;
+    ul{
+        gap: 10px;
+    }
+    .nav{
+        justify-content: end;
+    }
+    .nav-item{
+        a{
+            color: $verdeClaro;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+        }
+    }
+    .navbar-brand{
+        width: 296px;
+        img{
+            width: 296px;
+        }
+    }
+}
+
+
+.home{
+
+
+    .header_index{
+        padding: 100px 161px 0 161px;
+        display: flex;
+        justify-content: center;
+        .display_flex-container{
+            display: flex;
+        }
+        .container_title{
+            width: 600px;
+            h2{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;
+                color: $naranja;
+            }
+            h1{
+                color: $verdeOscuro;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 45px;
+                line-height: 109.3%;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                color: $verdeClaro;
+                margin: 0;
+            }
+            .strong{
+                font-weight: 700;
+            }
+            .light-dark{
+                color: $verdeOscuro;
+                font-size: 16px;
+            }
+            .span{
+                width: 463px;
+                height: 55px;
+                border: solid 1px $verdeClaro;
+                padding:14px 50px ;
+                align-items: center;
+                display: flex;
+                border-radius: 10px;
+                margin: 12px 0 0 0 ;
+                p{
+                    line-height: 14px;
+                    font-size: 14px;
+                    color: $verdeOscuro;
+                    font-weight: 400;
+                }
+            }
+        }
+    
+    }
+
+}
+.body_idiomas{
+    background-image: url('../multimedia/fondo-idiomas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -160px;
+}
+
+
+.header_idiomas{
+    text-align: center;
+    padding-top: 240px;
+    text-align: -webkit-center;
+    h1{
+        color: $verdeOscuro;
+        font-weight: 800;
+        font-size: 45px;
+    }
+    h2{
+        color: $verdeClaro;
+        font-weight: 400;
+        width: 400px;
+        font-size: 20px;
+        strong{
+            color: $naranja;
+        }
+    }
+}
+.title-section{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.btn-principal{
+    border: none;
+    background-color: $naranja;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 20px 20px rgb(96 91 91 / 25%);
+    padding: 36px;
+    border-radius: 20px;
+    width: 436px;
+    height: 502px;
+    gap: 20px;
+    background-color: #fff;
+    h5{
+        color: $verdeOscuro;
+        font-weight: 700;
+    }
+    .form-nombre{
+        display: flex;
+        gap: 16px;
+        font-size: 18px;
+        padding: 24px 0;
+        input{
+            width: 174px;
+        }
+    }
+    .form-datos{
+        padding: 0 0 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 18px;
+    }
+    input{
+        border-bottom: solid 1px #636363;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #000;
+    }
+    input::placeholder{
+        color: #000;
+    }
+    .form-buttons{
+        padding: 0 0 24px 0;
+        display: flex;
+        gap: 4px;
+        width: 100%;
+        font-size: 17px;
+        justify-content: space-between;
+        input{
+            margin-right: 5px;
+        }
+        div{
+            display: flex;
+        }
+
+    }
+    .btn-enviar{
+        width: 100%;
+        
+    }
+    .form-datos{
+        display: flex;
+        flex-direction: column ;
+    }
+    .btn-principal{
+        padding: 8px 36px;
+        width: 80%;
+    }
+}
+.body_index, .body_idiomas{
+    .main_index{
+        padding: 120px 0 0 0;
+        .cards-modalidades-contenedor{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            row-gap: 30px;
+            padding: 30px 0;
+            .contenedor-card{
+                border: solid 5px #fff;
+                width: 252px;
+                height: 247px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 0px;
+                padding: 46px 23px 0 23px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url('../multimedia/card-fondo.png');
+                a{
+                    width: 100%;
+                }
+                h6{
+                    color: $verdeOscuro;
+                    font-size: 20px;
+                    width: 100px;
+                    line-height: 20px;
+                }
+                p{
+                    color: $verdeClaro;
+                    font-size: 14px ;
+                    font-weight: 400;
+                    margin: 0;
+                    line-height: 15px;
+                }
+                span{
+                    color: $naranja;
+                    font-size: 14px;
+                }
+                .contenedor-btn{
+                    padding: 0;
+                    display: flex;
+                    justify-content: start;
+                    width: 80%;
+                    justify-content: flex-end;
+                    background-image: none;
+                    button{
+                        padding: 5px 5px;
+                        width: 100%;
+                    }
+                }
+    
+            }
+            .contenedor-card:hover{
+                border: solid 5px #fff;
+                background-image: url('../multimedia/card-hover.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                p, h6{
+                    color: #fff;
+                }
+                .contenedor-btn{
+                    background-color: $verdeClaro;
+                    border: none;
+                }
+            }
+        }
+        .idiomas{
+            padding-top: 200px;
+        }
+    }
+}
+
+.lineSelect{
+    border-bottom: solid 1px $naranja;
+}
+.lineSelectIdiomas{
+    border-bottom: solid 1px $naranja;
+}
+.lineSelectCambridge{
+    border-bottom: solid 1px $naranja;
+}
+.footer{
+    background-color: #3A3A3A;
+    padding: 100px 0;
+    .footer-header{
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        padding: 0px 250px;
+        gap: 100px;
+        align-items: center;
+        h6{
+            font-weight: 400;
+            font-size: 25px;
+            width: 250px;
+        }
+        span{
+            background-color: #fff;
+            width: 1px;
+            height: 100px;
+        }
+        ul{
+            li{
+                list-style-type: none;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    .footer-mid{
+        align-items: center;
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        padding: 10px 310px;
+        gap: 30px;
+        p{
+            margin: 0;
+        }
+        .logo{
+            width: 218px;
+            text-align: end;
+        }
+        span{
+            background-color: #fff;
+            width: 1px;
+            height: 20px;
+        }
+    }
+    .mid-line{
+        background-color: #fff;
+        height: 1px;
+        margin: 0 23%;
+    }
+    .footer-redes{
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        gap: 16px;
+        padding: 16px 0;
+        align-items: center;
+        span{
+            background-color: #fff;
+            width: 1px;
+            height: 20px;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            margin: 0;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        padding: 16px 12px;
+        justify-content: center;
+        ul{
+            gap: 10px;
+            justify-content: center;
+        }
+        .nav-item{
+            a{
+                color: $verdeClaro;
+                font-weight: 600;
+                font-size: 15px;
+                text-decoration: none;
+            }
+        }
+        .navbar-brand{
+            display: none;
+        }
+    }
+
+    .body_index, .body_idiomas{
+        background-size: cover;
+        form{
+            width: 100%;
+            margin: 150px 0 0 0;
+            padding: 16px 16px;
+            height: max-content;
+            .form-nombre{
+                flex-direction: column;
+                input{
+                    width: 100%;
+                }
+            }
+            .form-buttons{
+                font-size: 16px;
+                gap: 5px;
+                flex-direction: column;
+            }
+        }
+        .header_idiomas{
+            margin-top: 125px;
+            text-align: center;
+            padding-top: 100px;
+            text-align: -webkit-center;
+            h2{
+                font-size: 18px;
+                width: 300px;
+
+            }
+            h1{
+                font-size: 25px;
+                width: 300px;
+            }
+            p{
+                font-size: 16px;
+            }
+
+        }
+        .header_index{
+            display: flex;
+            flex-direction: column;
+            padding: 50px 16px;
+            .display_flex-container{
+            flex-direction: column;   
+            gap: 50px;  
+            .container_title{
+                width: 300px;
+                h2{
+                    font-size: 18px;
+
+                }
+                h1{
+                    font-size: 25px;
+                    width: 300px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .container_form{
+                margin-top: 50px;
+
+            }           
+            }
+
+        }
+        .main_index{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 0;
+            .openModal{
+                width: 100%;
+                form{
+                    width: 300px;
+                }
+            }
+            .idiomas{
+                padding: 0;
+            }
+            .cards-modalidades-contenedor{
+                width: 100%;
+                align-items: center;
+                display: flex;
+                flex-direction: column; 
+                .contenedor-card{
+                    align-items: center;
+                    padding: 0;
+                    gap: 8px;
+                    width: 300px;
+                    height: 90px;
+                    background: none;
+                    border:none;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    h6{
+                        color: #fff;
+                        margin-top: 10px;   
+                        width: 250px;
+                        height: 90px;
+                        background-image: url('../multimedia/bg-mobile-card.png');
+                        border: solid 2px #fff;
+                        background-size: cover;
+                        padding: 18px 18px;
+                    }
+                    p, span, .contenedor-btn{
+                        display: none;
+                    }
+
+                    .button-mobile{
+                        button{
+                            width: 90px;
+                            height: 90px;
+                            border: none;
+                            background-color: $naranja;
+                            color: #fff;
+                            font-weight: 500;
+                        }
+                        
+                    }
+                }
+                .contenedor-card:hover{
+                    background:none;
+                    border: none;
+                    h6{
+                        color: $verdeOscuro;
+                        background-image: url('../multimedia/bg-hover-card-mobile.png');
+                    }
+                }
+            }
+
+        }
+    }
+    .body_index{
+        background-image: url('../multimedia/bg-index-mobile.png');
+
+
+    }
+    .body_idiomas{
+        background-image: url('../multimedia/bg-idiomas-mobile.png');
+        background-size: cover;
+        .main_index{
+            padding: 250px 0 0 0;
+        }
+
+    }
+    .footer{
+        .displayNone{
+            display: none;
+        }
+        .footer-header{
+            flex-direction: column;
+            padding: 0;
+            text-align: center;
+            gap: 10px;
+            h6{
+                font-size: 16px;
+            }
+            ul{
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+        .footer-mid{
+            padding: 10px 10px;
+            font-size: 14px;
+            text-align: center;
+            gap: 10px;
+            .logo{
+                width: 200px;
+            }
+        }
+    }
+    .alumnos{
+display: none;
+    }
+    .gliderMobile{
+        background-color: $verdeClaro;
+        .glider-contain{
+            .glider-slide{
+                height: min-content;
+                width: 524px;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                border: solid 2px $naranja;
+                border-radius: 0px 20px 0 20px;
+                padding: 5px;
+                margin: 10px;
+                img{
+                    border-radius: 0px 20px 0 20px;
+                }
+            }
+        }
+    }
+    .body-cambridge{
+        background-image: url('../multimedia/bg-cambridge-mobile.png');
+        background-size: cover;
+        margin-top: 50px;
+        .header_index{
+            .display_flex-container{
+                flex-direction: column;   
+                gap: 50px;  
+                margin-top: -95px;
+                .container_title{
+                    width: 300px;
+                    h2{
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    h1{
+                        font-size: 25px;
+                        width: 300px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    .span{
+                        width: 300px;
+                        padding: 8px;
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .container_form{
+                    margin-top: 50px;
+    
+                }           
+                }
+        
+        }
+        form{
+            width: 100%;
+            margin: 150px 0 0 0;
+            padding: 16px 16px;
+            height: max-content;
+            .form-nombre{
+                flex-direction: column;
+                input{
+                    width: 100%;
+                }
+            }
+            .form-buttons{
+                font-size: 16px;
+                gap: 5px;
+                flex-direction: column;
+            }
+        }
+        .gliderMobile{
+            background-color: $verdeOscuro;
+            margin-top: 50px;
+            .glider-contain{
+                .glider-slide{
+                    height: min-content;
+                    width: 524px;
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    border: solid 2px $naranja;
+                    border-radius: 0px 20px 0 20px;
+                    padding: 5px;
+                    margin: 10px;
+                    img{
+                        border-radius: 0px 20px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 769px){
+    .gliderMobile{
+        display: none;
+    }
+    .body_index{
+        background-image: url('../multimedia/fondo-index.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -50px;
+    }
+    .glider-alumnos{
+        width: 100%;
+        padding: 0 200px;
+        margin-top: 400px;
+        padding-bottom: 70px;
+        h5{
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .glider-track{
+            gap: 20px;
+        }
+        .glider-dots{
+            padding-top: 50px;
+        }
+        .glider-slide{
+            height: fit-content;
+            align-self: center;
+        }
+        .contenedor-card-glider{
+    
+            width: 500px;
+            border: solid 1.5px $naranja;
+            padding: 15px;
+            border-radius: 20px 20px 0 20px ;
+            height: fit-content;
+            .contenedor-info-card-alumnos{
+                border-radius: 0px 20px 0 20px ;
+            img{
+                width: 100%;
+                border-radius: 0px 20px 0 0px ;
+            }
+            .texto-card-alumnos{
+                background-color: #fff;
+                border-radius: 0px 0px 0 20px ;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: end;
+                .span-card{
+                    background-color: $verdeOscuro;
+                    padding: 8px;
+                    color: #fff;
+                    font-weight: 600;
+                    width: 180px;
+                    border-radius: 20px 0px 0px 20px  ;
+                    text-align: center;
+                }
+                .texto-card{
+                    padding: 30px 16px 0 16px;
+                    color: $verdeClaro;
+                    margin: 0;
+                }
+    
+            }            
+            }
+    
+        }
+    
+    }
+    .button-mobile{
+        display: none;
+    }
+    .body-cambridge{
+        background-image: url('../multimedia/fondo-cambridge.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -50px;
+    }
+}
+@media (min-width: 1440px){
+    .main_index{
+        .idiomas{
+            padding-top: 350px!important;
+        }
+        .alumnos{
+            .glider-alumnos{
+                margin-top: 300px!important;
+            }
+        }
+    }
+
+}
+.openModal{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.219);
+    height: 100%;
+    z-index: 10;
+    form{
+        margin-top: 20px;
+        height: max-content;
+        z-index: 10;
+        .openModalButton{
+            width: fit-content;
+        }
+        .close_button_form{
+            display: flex;
+            align-self: end;
+            button{
+                border: $naranja 2px solid;
+            }
+            button:hover{
+                background-color: #fff;
+                color: $naranja;
+                border: solid 2px $naranja;
+            }
+        }
+        .form-select{
+            color: $naranja;
+            font-weight: 500;
+
+        }
+    }
+}
+.closeModal{
+    display: none;
+}
