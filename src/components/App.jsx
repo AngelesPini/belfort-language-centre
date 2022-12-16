@@ -11,7 +11,13 @@ import Footer from "./footer/footer";
 import Home from "./Home/home";
 import Cambridge from "./cambridge/cambridge";
 import Idiomas from "./idiomas/idiomas";
-
+import Blog from "./blog/blog";
+import CambridgeBlog from "./blog/cambridgeBlog";
+import Diezanos from "./blog/diezanos";
+import School from "./blog/school";
+import Aviso from "./footer/aviso";
+import Cookies from "./footer/cookies";
+import Privacidad from "./footer/privacidad";
 
 function App() {
   return (
@@ -23,6 +29,13 @@ function App() {
       <Route path="/form" element={<Form/>}/>
       <Route path='/cambridge' element={<Cambridge/>}/>
       <Route path='/idiomas' element={<Idiomas/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/school' element={<School/>}/>
+      <Route path='/diezanos' element={<Diezanos/>}/>
+      <Route path='/cambridgeBlog' element={<CambridgeBlog/>}/>
+      <Route path='/aviso' element={<Aviso/>}/>
+      <Route path='/cookies' element={<Cookies/>}/>
+      <Route path='/privacidad' element={<Privacidad/>}/>
     </Routes>
     <Footer/>
     </ModalProvider>

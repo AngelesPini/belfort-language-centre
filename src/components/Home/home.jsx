@@ -11,9 +11,9 @@ const Home = () => {
             <div className='header_index'>
                 <div className="display_flex-container">
                     <div className="container_title">
-                        <h2>CLASES PERSONALIZADAS</h2>
+                        <h2>Let ’s enjoy english!</h2>
                         <h1>HABLA COMO EXPERTO INGLÉS USA/UK </h1>
-                        <p className='light'>nuevas vacantes el próximo 15/10</p>
+                        <p className='light'>nuevas vacantes el próximo 15/01</p>
                         <p className='strong'>reserva hoy y obtén el 10% de dscto.</p>
                     </div>
                     <div className="container_form">

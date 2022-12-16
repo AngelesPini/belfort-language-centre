@@ -26,13 +26,23 @@ const FormModalidades = () => {
             <input type="text" placeholder='Ciudad*' name='ciudad' required/> 
             </div>
 
+            <div className="cuandoInicio">
 
+            <select className="form-select" aria-label=".form-select-lg example" name='fecha[]'>
+            <option selected={'Selecciona tu modalidad'}>¿Cuándo quieres iniciar?</option>
+            <option value={'proxima semana'}>La proxima semana</option>
+            <option value={'en 15 dias'}>En 15 dias</option>
+            <option value={'el próximo mes'}>El próximo mes</option>
+
+
+            </select>
+            </div>
 
 
             <div className="form-buttons">
 
             <select className="form-select" aria-label=".form-select-lg example" name='modalidad[]'>
-            <option selected={'Selecciona tu modalidad'}>Selecciona tu modalidad</option>
+            <option selected={'Selecciona tu modalidad'}>Confirma tu modalidad</option>
             <option value={'presencial'}>Presencial</option>
             <option value={'particular'}>Particular</option>
             <option value={'niveladora'}>Niveladora</option>

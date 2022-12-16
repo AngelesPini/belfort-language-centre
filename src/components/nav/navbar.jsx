@@ -12,6 +12,7 @@ const listOptions = [
     { text: "INICIO", route: "/" },
     { text: "IDIOMAS", route: "/idiomas" },
     { text: "CAMBRIDGE", route: "/cambridge" },
+    { text: "BLOG", route: "/blog"}
   ];
 
   

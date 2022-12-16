@@ -18,13 +18,13 @@ const Footer = () => {
                 <span className='displayNone'></span>
                 <ul>
                     <li>
-                        <Link>Aviso legal</Link>
+                        <Link to='/aviso'>Aviso legal</Link>
                     </li>
                     <li>
-                        <Link>Política de cookies</Link>
+                        <Link to='/cookies'>Política de cookies</Link>
                     </li>
                     <li>
-                        <Link>Política de privacidad de datos</Link>
+                        <Link to='/privaidad'>Política de privacidad de datos</Link>
                     </li>
                 </ul>
             </div>
@@ -38,8 +38,7 @@ const Footer = () => {
                 <img src={FB} alt="" onClick={() => onHandleFacebook()}/>
                 <span></span>
                 <img src={IG} alt="" onClick={() => onHandleInstagram()} />
-                <span></span>
-                <p>yt</p>
+
             </div>
         </div>
 
