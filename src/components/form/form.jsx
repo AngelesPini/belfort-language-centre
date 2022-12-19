@@ -21,16 +21,16 @@ const Form = () => {
             <div className="form-buttons">
 
                 <div className="form-check ">
-                    <input className="form-check-input" type="checkbox"  id="flexSwitchCheckDefault" name='opara mi'/>
-                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Para mi</label>
+                    <input className="form-check-input" type="checkbox"  id="flexCheckDefault1" name='opara mi'/>
+                    <label className="form-check-label" htmlFor="flexCheckDefault1">Para mi</label>
                 </div>
                 <div className="form-check">
-                    <input className="form-check-input" type="checkbox"  id="flexSwitchCheckDefault" name='para mi hij@'/>
-                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Para mi hij@</label>
+                    <input className="form-check-input" type="checkbox"  id="flexCheckDefault2" name='para mi hij@'/>
+                    <label className="form-check-label" htmlFor="flexCheckDefault2">Para mi hij@</label>
                 </div>
                 <div className="form-check">
-                    <input className="form-check-input" type="checkbox"  id="flexSwitchCheckDefault" name='para mi empresa'/>
-                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Para mi empresa</label>
+                    <input className="form-check-input" type="checkbox"  id="flexCheckDefault3" name='para mi empresa'/>
+                    <label className="form-check-label" htmlFor="flexCheckDefault3">Para mi empresa</label>
                 </div>
 
             </div>

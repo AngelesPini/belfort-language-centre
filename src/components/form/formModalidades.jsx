@@ -45,9 +45,11 @@ const FormModalidades = () => {
             <option selected={'Selecciona tu modalidad'}>Confirma tu modalidad</option>
             <option value={'presencial'}>Presencial</option>
             <option value={'particular'}>Particular</option>
-            <option value={'niveladora'}>Niveladora</option>
+
+            <option value={'para empresas'}>Para empresas</option>
+            <option value={'test de nivel'}>Test de nivel</option>
             <option value={'cambridge'}>Cambridge</option>
-            <option value={'online'}>Online</option>
+
             </select>
             </div>
 

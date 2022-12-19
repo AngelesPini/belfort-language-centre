@@ -24,7 +24,7 @@ const Footer = () => {
                         <Link to='/cookies'>Política de cookies</Link>
                     </li>
                     <li>
-                        <Link to='/privaidad'>Política de privacidad de datos</Link>
+                        <Link to='/privacidad'>Política de privacidad de datos</Link>
                     </li>
                 </ul>
             </div>

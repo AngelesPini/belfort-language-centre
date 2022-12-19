@@ -6,11 +6,11 @@ import ResenaUno from '../../multimedia/resena-mob-1.jpeg'
 import ResenaDos from '../../multimedia/resena-mob-2.jpeg'
 import ResenaTres from '../../multimedia/resena-mob-3.jpeg'
 import ResenaCuatro from '../../multimedia/resena-mob-4.jpeg'
-import ResenaCinco from '../../multimedia/resena-mob-5.jpeg'
+import ResenaCinco from '../../multimedia/resena-mob-5.jpg'
 import ResenaSeis from '../../multimedia/resena-mob-6.jpeg'
 import ResenaSiete from '../../multimedia/resena-mob-7.jpeg'
 import ResenaOcho from '../../multimedia/resena-mob-8.jpeg'
-import ResenaNueve from '../../multimedia/resena-mob-9.jpeg'
+import ResenaNueve from '../../multimedia/resena-mob-9.jpg'
 const CarrouselMobile = () => {
     return (
         <div className='gliderMobile'>

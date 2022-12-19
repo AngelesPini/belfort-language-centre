@@ -1,3 +1,46 @@
+@font-face {
+    font-family: 'ProximaNovaBlack';
+    src: url('../assets/ProximaNova-Black.ttf') format('truetype');
+    font-style: black;
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../assets/ProximaNova-Bold.ttf') format('truetype');
+    font-style: black;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'ProximaNovaExtraBold';
+    src: url('../assets/ProximaNova-Extrabld.ttf') format('truetype');
+    font-style: black;
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../assets/ProximaNova-Light.ttf') format('truetype');
+    font-style: black;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../assets/ProximaNova-Regular.ttf') format('truetype');
+    font-style: black;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../assets/ProximaNova-Semibold.ttf') format('truetype');
+    font-style: black;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'ProximaNovaThin';
+    src: url('../assets/ProximaNovaT-Thin.ttf') format('truetype');
+    font-style: black;
+    font-weight: 200;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +50,35 @@ $verdeClaro:#6DB32D;
 $naranja:#F3B114;
 $gris: #5b6f70;
 // generales
+h1{
+    font-family: 'ProximaNovaBlack';
+}
+h2{
+    font-family: 'ProximaNovaExtrabold';
+}
+
+h5, h3{
+    font-family: 'ProximaNovaBold';
+}
+h6, button{
+    font-family: 'ProximaNovaSemibold';
+    strong{
+        font-family: 'ProximaNovaExtrabold';
+    }
+}
+p, span, input, label, a{
+    font-family: 'ProximaNovaRegular';
+}
+
+input::placeholder{
+    padding-left: 5px;
+
+}
+button:hover{
+    background-color: #fff;
+    color: $naranja;
+    border: solid 2px $naranja;
+}
 .body_blog{
     .blog-title{
         color: $verdeOscuro;
@@ -584,6 +656,7 @@ form{
                     border:none;
                     flex-direction: row;
                     justify-content: space-between;
+                    box-shadow: none;
                     h6{
                         color: #fff;
                         margin-top: 10px;   
@@ -593,6 +666,8 @@ form{
                         border: solid 2px #fff;
                         background-size: cover;
                         padding: 18px 18px;
+                        box-shadow: #edf7f1 3px 6px 17px 0px;;
+                        border-radius: 20px;
                     }
                     p, span, .contenedor-btn{
                         display: none;
@@ -606,6 +681,8 @@ form{
                             background-color: $naranja;
                             color: #fff;
                             font-weight: 500;
+                            box-shadow: #edf7f1 3px 6px 17px 0px;;
+                            border-radius: 20px;
                         }
                         
                     }
@@ -678,6 +755,7 @@ display: none;
                 border-radius: 0px 20px 0 20px;
                 padding: 5px;
                 margin: 10px;
+                box-shadow: $verdeOscuro 3px 6px 17px 0px;
                 img{
                     border-radius: 0px 20px 0 20px;
                 }
@@ -795,7 +873,7 @@ display: none;
             align-self: center;
         }
         .contenedor-card-glider{
-    
+            box-shadow: #347c52 15px 14px 20px 0px;
             width: 500px;
             border: solid 1.5px $naranja;
             padding: 15px;

@@ -60,7 +60,7 @@ const CardsModalidades = () => {
             </div>
             <div className='contenedor-card'>
 
-                <h6><strong>MODALIDAD</strong> NIVELADORA</h6>
+                <h6><strong>TEST DE</strong> NIVEL</h6>
                 <p>Conoce tu nivel de inglés y obtén un descuento de bienvenida </p>
                 <div className="contenedor-btn">
                     <button className='btn-principal' onClick={() => toggleModal()}>Inscribirme</button>
