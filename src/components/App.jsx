@@ -18,12 +18,13 @@ import School from "./blog/school";
 import Aviso from "./footer/aviso";
 import Cookies from "./footer/cookies";
 import Privacidad from "./footer/privacidad";
-
+import Whatsappbutton from "./whatsappButton/whatsappbutton";
 function App() {
   return (
     <>
     <ModalProvider>
     <Navbar/>
+    <Whatsappbutton/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path="/form" element={<Form/>}/>

@@ -50,6 +50,7 @@ $verdeClaro:#6DB32D;
 $naranja:#F3B114;
 $gris: #5b6f70;
 // generales
+
 h1{
     font-family: 'ProximaNovaBlack';
 }
@@ -540,7 +541,20 @@ form{
 
 
 @media screen and (max-width: 768px){
-
+    .contenedor-wsp-button{
+        position: absolute;
+        left: 80%;
+        top: 65%;
+        a{
+            position: fixed;
+        }
+        .button-wsp{
+            img{
+                width: 80px;
+                height: auto;
+            }
+        }
+    }
     .navbar{
         padding: 16px 12px;
         justify-content: center;
@@ -867,6 +881,20 @@ display: none;
 
 }
 @media (min-width: 769px){
+    .contenedor-wsp-button{
+        position: absolute;
+        left: 90%;
+        top: 65%;
+        a{
+            position: fixed;
+        }
+        .button-wsp{
+            img{
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
     .gliderMobile{
         display: none;
     }
