@@ -50,7 +50,45 @@ $verdeClaro:#6DB32D;
 $naranja:#F3B114;
 $gris: #5b6f70;
 // generales
+.modalTestContainer{
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: grid;
+    align-self: center;
+    padding: 15px;
+    .close_button_form{
+        display: flex;
+        flex-direction: row;
+        justify-self: self-end;
+        height: fit-content;
+        button{
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: $naranja;
+            color: #fff;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+    }
+    .content-buttons-modal{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        button{
+            border: none;
+            background-color: $naranja;
+            color: #fff;
+            border-radius: 20px;
+            font-weight: 500;
+            padding: 8px 16px;
+            width: 100%;
+        }
 
+    }
+}
 h1{
     font-family: 'ProximaNovaBlack';
 }
@@ -296,7 +334,7 @@ button:hover{
     text-align: center;
     color: #fff;
     padding-bottom: 50px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -408,7 +446,7 @@ form{
                 h6{
                     color: $verdeOscuro;
                     font-size: 20px;
-                    width: 100px;
+                    width: 170px;
                     line-height: 20px;
                 }
                 p{
@@ -456,12 +494,7 @@ form{
 .lineSelect{
     border-bottom: solid 1px $naranja;
 }
-.lineSelectIdiomas{
-    border-bottom: solid 1px $naranja;
-}
-.lineSelectCambridge{
-    border-bottom: solid 1px $naranja;
-}
+
 .footer{
     background-color: #3A3A3A;
     padding: 100px 0;
@@ -543,14 +576,14 @@ form{
 @media screen and (max-width: 768px){
     .contenedor-wsp-button{
         position: absolute;
-        left: 80%;
+        left: 85%;
         top: 65%;
         a{
             position: fixed;
         }
         .button-wsp{
             img{
-                width: 80px;
+                width: 40px;
                 height: auto;
             }
         }
@@ -707,8 +740,11 @@ form{
                         border: solid 2px #fff;
                         background-size: cover;
                         padding: 18px 18px;
-                        box-shadow: #edf7f1 3px 6px 17px 0px;;
+                        box-shadow: #edf7f18f 3px 6px 20px 0px;
                         border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
                     }
                     p, span, .contenedor-btn{
                         display: none;
@@ -722,7 +758,7 @@ form{
                             background-color: $naranja;
                             color: #fff;
                             font-weight: 500;
-                            box-shadow: #edf7f1 3px 6px 17px 0px;;
+                            box-shadow: #edf7f18f 3px 6px 20px 0px;
                             border-radius: 20px;
                         }
                         
@@ -890,7 +926,7 @@ display: none;
         }
         .button-wsp{
             img{
-                width: 100px;
+                width: 60px;
                 height: auto;
             }
         }

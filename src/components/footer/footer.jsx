@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FB from '../../multimedia/FACEBOOK.png'
-import IG from '../../multimedia/INSTAGRAM.png'
+import FB from '../../multimedia/FACEBOOK.svg'
+import IG from '../../multimedia/INSTAGRAM.svg'
 
 const Footer = () => {
     const onHandleFacebook = () => {

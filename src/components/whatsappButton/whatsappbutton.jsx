@@ -1,5 +1,5 @@
 import React from 'react';
-import Wsp from '../../multimedia/WhatsApp-logo.png'
+import Wsp from '../../multimedia/WhatsApp-logo.svg'
 const Whatsappbutton = () => {
     return (
         <div className='contenedor-wsp-button'>

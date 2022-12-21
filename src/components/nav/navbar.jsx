@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 // recursos
-import Logo from '../../multimedia/logo.png'
+import Logo from '../../multimedia/logo.svg'
 
 
 const listOptions = [

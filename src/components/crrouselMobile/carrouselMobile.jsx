@@ -4,13 +4,13 @@ import Glider from 'react-glider';
 import 'glider-js/glider.min.css';
 import ResenaUno from '../../multimedia/resena-mob-1.jpeg'
 import ResenaDos from '../../multimedia/resena-mob-2.jpeg'
-import ResenaTres from '../../multimedia/resena-mob-3.jpeg'
-import ResenaCuatro from '../../multimedia/resena-mob-4.jpeg'
-import ResenaCinco from '../../multimedia/resena-mob-5.jpg'
-import ResenaSeis from '../../multimedia/resena-mob-6.jpeg'
-import ResenaSiete from '../../multimedia/resena-mob-7.jpeg'
-import ResenaOcho from '../../multimedia/resena-mob-8.jpeg'
-import ResenaNueve from '../../multimedia/resena-mob-9.jpg'
+import ResenaTres from '../../multimedia/resena-mob-3.webp'
+import ResenaCuatro from '../../multimedia/resena-mob-4.webp'
+import ResenaCinco from '../../multimedia/resena-mob-5.webp'
+import ResenaSeis from '../../multimedia/resena-mob-6.webp'
+import ResenaSiete from '../../multimedia/resena-mob-7.webp'
+import ResenaOcho from '../../multimedia/resena-mob-8.webp'
+import ResenaNueve from '../../multimedia/resena-mob-9.webp'
 const CarrouselMobile = () => {
     return (
         <div className='gliderMobile'>

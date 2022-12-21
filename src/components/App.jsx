@@ -4,6 +4,7 @@ import '../sass/style.scss';
 
 // context
 import { ModalProvider } from "../context/modalContext";
+import { ModalTestProvider } from "../context/modalContextTest";
 // routes
 import Navbar from "./nav/navbar";
 import Form from "./form/form";
@@ -22,6 +23,7 @@ import Whatsappbutton from "./whatsappButton/whatsappbutton";
 function App() {
   return (
     <>
+    <ModalTestProvider>
     <ModalProvider>
     <Navbar/>
     <Whatsappbutton/>
@@ -40,7 +42,7 @@ function App() {
     </Routes>
     <Footer/>
     </ModalProvider>
-
+    </ModalTestProvider>
     </>
   );
 }

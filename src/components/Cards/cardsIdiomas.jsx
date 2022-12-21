@@ -8,6 +8,8 @@ import FormIdiomas from '../form/formIdiomas';
 const CardsIdiomas = () => {
     
     const {modalOpen, toggleModal} = useContext(ModalContext)
+
+
     return (
         <>
         <h5 className='title-section'>NUESTROS IDIOMAS</h5>

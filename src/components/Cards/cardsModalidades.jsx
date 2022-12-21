@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FormModalidades from '../form/formModalidades';
+import ModalTest from '../form/modalTest';
 
 // context
 import { useContext } from 'react';
 import { ModalContext } from '../../context/modalContext';
+
+import { ModalContextTest } from '../../context/modalContextTest';
 const CardsModalidades = () => {
+
+    const {modalOpenTest, toggleModalTest} = useContext(ModalContextTest)
 
     const {modalOpen, toggleModal} = useContext(ModalContext)
     return (
@@ -60,13 +65,13 @@ const CardsModalidades = () => {
             </div>
             <div className='contenedor-card'>
 
-                <h6><strong>TEST DE</strong> NIVEL</h6>
+                <h6><strong>CONOCE TU NIVEL</strong> DE INGLÉS</h6>
                 <p>Conoce tu nivel de inglés y obtén un descuento de bienvenida </p>
                 <div className="contenedor-btn">
-                    <button className='btn-principal' onClick={() => toggleModal()}>Inscribirme</button>
+                    <button className='btn-principal' onClick={() => toggleModalTest()}>Inscribirme</button>
                 </div>
                 <div className="button-mobile">
-                    <button type='button' onClick={() => toggleModal()}> GO</button>
+                    <button type='button' onClick={() => toggleModalTest()}> GO</button>
                 </div>
             </div>
             <div className='contenedor-card'>
@@ -87,7 +92,9 @@ const CardsModalidades = () => {
         <FormModalidades/>
         </div>
 
-        
+        <div className={modalOpenTest ? 'openModal modal' : 'closeModal'} id="exampleModal" tabIndex={"-1"} aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <ModalTest/>
+        </div>
         </>
 
     );
