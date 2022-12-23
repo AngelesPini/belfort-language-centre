@@ -44,6 +44,11 @@
 *{
     margin: 0;
     padding: 0;
+
+    // background-image: url('../multimedia/bg-total.png');
+}
+body{
+    background-size: cover;
 }
 $verdeOscuro:#347C52;
 $verdeClaro:#6DB32D;
@@ -248,6 +253,7 @@ button:hover{
         padding: 100px 161px 0 161px;
         display: flex;
         justify-content: center;
+        background-image: url('../multimedia/bg-header-index.png');
         .display_flex-container{
             display: flex;
         }
@@ -301,10 +307,20 @@ button:hover{
         }
     
     }
-
+    .header_cambridge{
+        background-image: url('../multimedia/bg-header-cambridge.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 150px 161px 161px;
+    }
+.cambridge-alumnos{
+    margin-top: -175px;
+    .glider-alumnos{
+        background: linear-gradient(217.61deg, #6FB32D -2.73%, #72B52F 21.27%, #61B06C 100%);
+    }
+}
 }
 .body_idiomas{
-    background-image: url('../multimedia/fondo-idiomas.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -160px;
@@ -314,7 +330,9 @@ button:hover{
 .header_idiomas{
     text-align: center;
     padding-top: 240px;
+    padding-bottom: 220px;
     text-align: -webkit-center;
+    background-image: url('../multimedia/bg-header-idiomas.png');
     h1{
         color: $verdeOscuro;
         font-weight: 800;
@@ -333,9 +351,10 @@ button:hover{
 .title-section{
     text-align: center;
     color: #fff;
-    padding-bottom: 50px;
+    padding: 119px 0 50px 0;
     font-size: 24px;
     font-weight: 800;
+    background:none;
 }
 
 .btn-principal{
@@ -358,6 +377,8 @@ form{
     height: 502px;
     gap: 20px;
     background-color: #fff;
+    z-index: 4;
+    position: relative;
     h5{
         color: $verdeOscuro;
         font-weight: 700;
@@ -418,8 +439,12 @@ form{
 }
 .body_index, .body_idiomas{
     .main_index{
-        padding: 120px 0 0 0;
+        padding: 175px 0 0 0;
+        margin-top: -153px;
+        background: linear-gradient(205.25deg, #5EAD66 0%, #37855B 50.85%, #206E57 100%);
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 0.51%, 1.00% 0.45%, 2.00% 0.41%, 3.00% 0.40%, 4.00% 0.41%, 5.00% 0.45%, 6.00% 0.51%, 7.00% 0.59%, 8.00% 0.70%, 9.00% 0.83%, 10.00% 0.97%, 11.00% 1.14%, 12.00% 1.33%, 13.00% 1.53%, 14.00% 1.75%, 15.00% 1.98%, 16.00% 2.22%, 17.00% 2.47%, 18.00% 2.74%, 19.00% 3.00%, 20.00% 3.27%, 21.00% 3.55%, 22.00% 3.82%, 23.00% 4.09%, 24.00% 4.35%, 25.00% 4.61%, 26.00% 4.86%, 27.00% 5.10%, 28.00% 5.33%, 29.00% 5.54%, 30.00% 5.74%, 31.00% 5.92%, 32.00% 6.08%, 33.00% 6.22%, 34.00% 6.34%, 35.00% 6.44%, 36.00% 6.51%, 37.00% 6.57%, 38.00% 6.59%, 39.00% 6.60%, 40.00% 6.58%, 41.00% 6.54%, 42.00% 6.47%, 43.00% 6.38%, 44.00% 6.27%, 45.00% 6.13%, 46.00% 5.98%, 47.00% 5.81%, 48.00% 5.62%, 49.00% 5.41%, 50.00% 5.19%, 51.00% 4.95%, 52.00% 4.71%, 53.00% 4.45%, 54.00% 4.19%, 55.00% 3.92%, 56.00% 3.65%, 57.00% 3.38%, 58.00% 3.11%, 59.00% 2.84%, 60.00% 2.57%, 61.00% 2.32%, 62.00% 2.07%, 63.00% 1.83%, 64.00% 1.61%, 65.00% 1.40%, 66.00% 1.21%, 67.00% 1.03%, 68.00% 0.88%, 69.00% 0.74%, 70.00% 0.63%, 71.00% 0.54%, 72.00% 0.47%, 73.00% 0.42%, 74.00% 0.40%, 75.00% 0.40%, 76.00% 0.43%, 77.00% 0.48%, 78.00% 0.55%, 79.00% 0.65%, 80.00% 0.77%, 81.00% 0.91%, 82.00% 1.07%, 83.00% 1.24%, 84.00% 1.44%, 85.00% 1.65%, 86.00% 1.88%, 87.00% 2.12%, 88.00% 2.36%, 89.00% 2.62%, 90.00% 2.89%, 91.00% 3.16%, 92.00% 3.43%, 93.00% 3.70%, 94.00% 3.97%, 95.00% 4.24%, 96.00% 4.50%, 97.00% 4.75%, 98.00% 5.00%, 99.00% 5.23%, 100.00% 5.45%);
         .cards-modalidades-contenedor{
+
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
@@ -488,6 +513,11 @@ form{
         .idiomas{
             padding-top: 200px;
         }
+    }
+    .idiomas-index{
+        padding: 0;
+        margin-top: -186px;
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 4.73%, 2.00% 4.84%, 4.00% 5.01%, 6.00% 5.25%, 8.00% 5.54%, 10.00% 5.88%, 12.00% 6.25%, 14.00% 6.64%, 16.00% 7.03%, 18.00% 7.42%, 20.00% 7.79%, 22.00% 8.12%, 24.00% 8.40%, 26.00% 8.63%, 28.00% 8.79%, 30.00% 8.88%, 32.00% 8.90%, 34.00% 8.84%, 36.00% 8.71%, 38.00% 8.52%, 40.00% 8.26%, 42.00% 7.95%, 44.00% 7.60%, 46.00% 7.22%, 48.00% 6.83%, 50.00% 6.44%, 52.00% 6.05%, 54.00% 5.70%, 56.00% 5.38%, 58.00% 5.12%, 60.00% 4.91%, 62.00% 4.77%, 64.00% 4.71%, 66.00% 4.71%, 68.00% 4.79%, 70.00% 4.95%, 72.00% 5.16%, 74.00% 5.44%, 76.00% 5.76%, 78.00% 6.12%, 80.00% 6.51%, 82.00% 6.90%, 84.00% 7.29%, 86.00% 7.67%, 88.00% 8.01%, 90.00% 8.31%, 92.00% 8.56%, 94.00% 8.74%, 96.00% 8.86%, 98.00% 8.90%, 100.00% 8.87%);
     }
 }
 
@@ -574,17 +604,23 @@ form{
 
 
 @media screen and (max-width: 768px){
+
     .contenedor-wsp-button{
         position: absolute;
         left: 85%;
         top: 65%;
+        z-index: 10;
+
         a{
+
             position: fixed;
         }
         .button-wsp{
+
             img{
                 width: 40px;
                 height: auto;
+
             }
         }
     }
@@ -639,7 +675,7 @@ form{
         background-size: cover;
         form{
             width: 100%;
-            margin: 150px 0 0 0;
+            margin: 10px 0 0 0;
             padding: 16px 16px;
             height: max-content;
             .form-nombre{
@@ -776,16 +812,18 @@ form{
 
         }
     }
-    .body_index{
-        background-image: url('../multimedia/bg-index-mobile.png');
-
-
-    }
     .body_idiomas{
-        background-image: url('../multimedia/bg-idiomas-mobile.png');
         background-size: cover;
+        .header_idiomas{
+            padding-bottom: 161px;
+            background-size: cover;
+            h1{
+                margin-top: -50px;
+            }
+        }
         .main_index{
-            padding: 250px 0 0 0;
+            padding: 0;
+            margin-top: -109px;
         }
 
     }
@@ -820,7 +858,9 @@ form{
 display: none;
     }
     .gliderMobile{
-        background-color: $verdeClaro;
+        margin-top: -70px;
+        background: linear-gradient(205.25deg, #5EAD66 0%, #37855B 50.85%, #206E57 100%);
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 0.51%, 1.00% 0.45%, 2.00% 0.41%, 3.00% 0.40%, 4.00% 0.41%, 5.00% 0.45%, 6.00% 0.51%, 7.00% 0.59%, 8.00% 0.70%, 9.00% 0.83%, 10.00% 0.97%, 11.00% 1.14%, 12.00% 1.33%, 13.00% 1.53%, 14.00% 1.75%, 15.00% 1.98%, 16.00% 2.22%, 17.00% 2.47%, 18.00% 2.74%, 19.00% 3.00%, 20.00% 3.27%, 21.00% 3.55%, 22.00% 3.82%, 23.00% 4.09%, 24.00% 4.35%, 25.00% 4.61%, 26.00% 4.86%, 27.00% 5.10%, 28.00% 5.33%, 29.00% 5.54%, 30.00% 5.74%, 31.00% 5.92%, 32.00% 6.08%, 33.00% 6.22%, 34.00% 6.34%, 35.00% 6.44%, 36.00% 6.51%, 37.00% 6.57%, 38.00% 6.59%, 39.00% 6.60%, 40.00% 6.58%, 41.00% 6.54%, 42.00% 6.47%, 43.00% 6.38%, 44.00% 6.27%, 45.00% 6.13%, 46.00% 5.98%, 47.00% 5.81%, 48.00% 5.62%, 49.00% 5.41%, 50.00% 5.19%, 51.00% 4.95%, 52.00% 4.71%, 53.00% 4.45%, 54.00% 4.19%, 55.00% 3.92%, 56.00% 3.65%, 57.00% 3.38%, 58.00% 3.11%, 59.00% 2.84%, 60.00% 2.57%, 61.00% 2.32%, 62.00% 2.07%, 63.00% 1.83%, 64.00% 1.61%, 65.00% 1.40%, 66.00% 1.21%, 67.00% 1.03%, 68.00% 0.88%, 69.00% 0.74%, 70.00% 0.63%, 71.00% 0.54%, 72.00% 0.47%, 73.00% 0.42%, 74.00% 0.40%, 75.00% 0.40%, 76.00% 0.43%, 77.00% 0.48%, 78.00% 0.55%, 79.00% 0.65%, 80.00% 0.77%, 81.00% 0.91%, 82.00% 1.07%, 83.00% 1.24%, 84.00% 1.44%, 85.00% 1.65%, 86.00% 1.88%, 87.00% 2.12%, 88.00% 2.36%, 89.00% 2.62%, 90.00% 2.89%, 91.00% 3.16%, 92.00% 3.43%, 93.00% 3.70%, 94.00% 3.97%, 95.00% 4.24%, 96.00% 4.50%, 97.00% 4.75%, 98.00% 5.00%, 99.00% 5.23%, 100.00% 5.45%);
         .glider-contain{
             .glider-slide{
                 height: min-content;
@@ -840,10 +880,12 @@ display: none;
         }
     }
     .body-cambridge{
-        background-image: url('../multimedia/bg-cambridge-mobile.png');
         background-size: cover;
         margin-top: 50px;
         .header_index{
+            background-image: url('../multimedia/bg-cambridge-mobile.jpg');
+            background-size: contain;
+            padding: 100px 161px 0 161px;
             .display_flex-container{
                 flex-direction: column;   
                 gap: 50px;  
@@ -870,7 +912,10 @@ display: none;
                     }
                 }
                 .container_form{
-                    margin-top: 50px;
+                    margin-top: 80px;
+                    form{
+                        margin-top: 0;
+                    }
     
                 }           
                 }
@@ -895,7 +940,7 @@ display: none;
         }
         .gliderMobile{
             background-color: $verdeOscuro;
-            margin-top: 50px;
+            margin-top: 5px;
             .glider-contain{
                 .glider-slide{
                     height: min-content;
@@ -916,11 +961,108 @@ display: none;
     }
 
 }
+@media (min-width:769px) and (max-width:1279px){
+    .body_blog{
+        .main-blog{
+            .blog-container{
+                .contenedor-imagen{
+                    img{
+                        width: 200px;
+                    }
+                }
+                .contenedor-texto{
+                 h5{
+                    font-size: 16px;
+                    width: 200px;
+                 }   
+                 p{
+                    font-size: 14px;
+                 }
+                }
+            }
+        }
+    }
+.blog-sub-category{
+    padding: 0 100px;
+}
+.body_index{
+    .main_index{
+        margin-top: -294px;
+    }
+}
+.main_index{
+    margin-top: -294px;
+}
+    .navbar{
+        padding: 8px 16px;
+        .navbar-brand{
+            img{
+                width: 170px;
+            }
+        }
+        ul{
+            .nav-item{
+                font-size: 10px;
+            }
+        }
+
+    }
+    .header_index{
+        padding: 100px 50px !important;
+    }
+    .header_index, .header_cambridge{
+        gap: 50px;
+
+        .display_flex-container{
+            justify-content: space-around;
+            gap: 65px;
+            .container_title{
+                width: fit-content;
+                h2{
+                    font-size: 22px;
+                }
+                h1{
+                    font-size: 35px;
+                    width: 300px;
+                }
+                .span{
+                    width: 400px;
+                }
+            }
+            .container_form{
+                form{
+                    width: 300px;
+                    height: max-content;
+                    padding: 16px;
+                    .form-nombre{
+                        flex-direction: column;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width: 769px){
+    .footer{
+        .footer-header{
+            gap: 10px;
+            padding: 0;
+        }
+        .footer-mid{
+            gap: 10px;
+            padding: 50px 0;
+        }
+    }
+
+
     .contenedor-wsp-button{
         position: absolute;
         left: 90%;
         top: 65%;
+        z-index: 10;
         a{
             position: fixed;
         }
@@ -935,7 +1077,7 @@ display: none;
         display: none;
     }
     .body_index{
-        background-image: url('../multimedia/fondo-index.png');
+
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: -50px;
@@ -943,8 +1085,11 @@ display: none;
     .glider-alumnos{
         width: 100%;
         padding: 0 200px;
-        margin-top: 400px;
+        margin-top: 40px;
         padding-bottom: 70px;
+        padding-top: 210px;
+        background-color: $verdeClaro;
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 9.24%, 1.00% 8.61%, 2.00% 8.00%, 3.00% 7.42%, 4.00% 6.86%, 5.00% 6.35%, 6.00% 5.88%, 7.00% 5.47%, 8.00% 5.12%, 9.00% 4.84%, 10.00% 4.62%, 11.00% 4.48%, 12.00% 4.41%, 13.00% 4.41%, 14.00% 4.49%, 15.00% 4.65%, 16.00% 4.87%, 17.00% 5.17%, 18.00% 5.53%, 19.00% 5.95%, 20.00% 6.42%, 21.00% 6.94%, 22.00% 7.50%, 23.00% 8.09%, 24.00% 8.70%, 25.00% 9.33%, 26.00% 9.96%, 27.00% 10.59%, 28.00% 11.21%, 29.00% 11.80%, 30.00% 12.37%, 31.00% 12.89%, 32.00% 13.37%, 33.00% 13.80%, 34.00% 14.17%, 35.00% 14.48%, 36.00% 14.72%, 37.00% 14.89%, 38.00% 14.98%, 39.00% 15.00%, 40.00% 14.94%, 41.00% 14.81%, 42.00% 14.60%, 43.00% 14.33%, 44.00% 13.99%, 45.00% 13.59%, 46.00% 13.13%, 47.00% 12.63%, 48.00% 12.08%, 49.00% 11.50%, 50.00% 10.89%, 51.00% 10.27%, 52.00% 9.64%, 53.00% 9.01%, 54.00% 8.39%, 55.00% 7.78%, 56.00% 7.21%, 57.00% 6.67%, 58.00% 6.17%, 59.00% 5.73%, 60.00% 5.34%, 61.00% 5.01%, 62.00% 4.75%, 63.00% 4.56%, 64.00% 4.44%, 65.00% 4.40%, 66.00% 4.43%, 67.00% 4.54%, 68.00% 4.72%, 69.00% 4.98%, 70.00% 5.30%, 71.00% 5.68%, 72.00% 6.12%, 73.00% 6.61%, 74.00% 7.14%, 75.00% 7.71%, 76.00% 8.31%, 77.00% 8.93%, 78.00% 9.56%, 79.00% 10.20%, 80.00% 10.82%, 81.00% 11.43%, 82.00% 12.01%, 83.00% 12.56%, 84.00% 13.08%, 85.00% 13.54%, 86.00% 13.95%, 87.00% 14.29%, 88.00% 14.58%, 89.00% 14.79%, 90.00% 14.93%, 91.00% 14.99%, 92.00% 14.99%, 93.00% 14.90%, 94.00% 14.74%, 95.00% 14.51%, 96.00% 14.21%, 97.00% 13.85%, 98.00% 13.43%, 99.00% 12.95%, 100.00% 12.43%);
         h5{
             font-weight: 800;
             font-size: 25px;
@@ -952,16 +1097,20 @@ display: none;
             color: #fff;
             text-align: center;
             padding-bottom: 50px;
+
         }
         .glider-track{
             gap: 20px;
+            background: none ;
         }
         .glider-dots{
             padding-top: 50px;
+            background: none ;
         }
         .glider-slide{
             height: fit-content;
             align-self: center;
+
         }
         .contenedor-card-glider{
             box-shadow: #347c52 15px 14px 20px 0px;
@@ -1008,16 +1157,25 @@ display: none;
         display: none;
     }
     .body-cambridge{
-        background-image: url('../multimedia/fondo-cambridge.png');
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: -50px;
     }
 }
 @media (min-width: 1440px){
+    
+    .header_idiomas {
+        background-size: cover;
+    }
+    .idiomas-index{
+        margin-top: -191px;
+    }
+    .home .cambridge-alumnos {
+        margin-top: -433px;
+    }
     .main_index{
         .idiomas{
-            padding-top: 350px!important;
+            padding-top: 230px!important;
         }
         .alumnos{
             .glider-alumnos{

@@ -7,7 +7,7 @@ const Cambridge = () => {
         <div className="home">
             <div className="body-cambridge">
 
-            <div className='header_index'>
+            <div className='header_index header_cambridge'>
                 <div className="display_flex-container">
                     <div className="container_title">
                         <h2>LA CERTIFICACIÓN MÁS PROFESIONAL</h2>
@@ -24,7 +24,7 @@ const Cambridge = () => {
                 </div>
             </div>
             <div className="main_index">
-                <div className="alumnos">
+                <div className="alumnos cambridge-alumnos">
                     <Alumnos/>
                 </div>
                 <CarrouselMobile/>

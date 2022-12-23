@@ -12,7 +12,7 @@ const Idiomas = () => {
             <h1>ÉCHALE UN OJO</h1>
             <h2>A <strong>NUESTRA OFERTA</strong> DE FORMACIÓN ONLINE PARA IDIOMAS</h2>
             </div>  
-            <div className="main_index">
+            <div className="main_index idiomas-index">
                 <div className="idiomas">
                 <CardsIdiomas/>                    
                 </div>
