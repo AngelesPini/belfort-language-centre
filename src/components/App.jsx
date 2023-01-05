@@ -5,6 +5,7 @@ import '../sass/style.scss';
 // context
 import { ModalProvider } from "../context/modalContext";
 import { ModalTestProvider } from "../context/modalContextTest";
+import { ModalPruebaProvider } from "../context/modalPrueba";
 // routes
 import Navbar from "./nav/navbar";
 import Form from "./form/form";
@@ -25,6 +26,7 @@ function App() {
     <>
     <ModalTestProvider>
     <ModalProvider>
+    <ModalPruebaProvider>
     <Navbar/>
     <Whatsappbutton/>
     <Routes>
@@ -41,6 +43,7 @@ function App() {
       <Route path='/privacidad' element={<Privacidad/>}/>
     </Routes>
     <Footer/>
+    </ModalPruebaProvider>
     </ModalProvider>
     </ModalTestProvider>
     </>

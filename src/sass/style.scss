@@ -94,6 +94,61 @@ $gris: #5b6f70;
 
     }
 }
+.container_form{
+    .form-idiomas, .form-modalidades{
+        display: none;
+    }
+
+}
+.modalIdiomas{
+    .form-home, .form-modalidades{
+        display: none;
+    }
+}
+.modalModalidades{
+    .form-home, .form-idiomas{
+        display: none;
+    }
+}
+
+.pruebasModal{
+    .contenedor-buttons-modal-testNivel{
+        display: none;
+    }
+    .contenedor-buttons-modal-plataforma{
+        a{
+            display: flex;
+    width: 100%;
+    text-decoration: none;
+    button{
+        display: flex;
+        background: #fff;
+        color: #f3b114;
+        align-items: center;
+        justify-content: space-between;
+        text-align: start;
+        border: solid 2px $naranja;
+        img{
+            width: 50px;
+        }
+    }
+    button:hover{
+        background: $verdeClaro;
+        color: #fff;
+    }
+        }
+
+    }
+}
+.testModal{
+        .contenedor-buttons-modal-plataforma{
+            display: none!important;
+        }
+        .contenedor-buttons-modal-testNivel{
+            display: flex!important;
+        }
+
+}
 h1{
     font-family: 'ProximaNovaBlack';
 }
@@ -256,6 +311,7 @@ button:hover{
         background-image: url('../multimedia/bg-header-index.png');
         .display_flex-container{
             display: flex;
+            gap: 150px;
         }
         .container_title{
             width: 600px;
@@ -437,7 +493,8 @@ form{
         width: 80%;
     }
 }
-.body_index, .body_idiomas{
+
+.body_index, .body_idiomas, .body-cambridge{
     .main_index{
         padding: 175px 0 0 0;
         margin-top: -153px;
@@ -504,10 +561,21 @@ form{
                 background-size: cover;
                 background-repeat: no-repeat;
                 transform: translate(0, -10px);
-                // .contenedor-btn{
-                //     background-color: $verdeClaro;
-                //     border: none;
-                // }
+            }
+        }
+        .extra-contenedor{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.58) 0%, rgba(58, 136, 92, 0.52) 100%);
+
+            clip-path: polygon(100% 0%, 0% 0% , 0.00% 88.56%, 2.00% 86.91%, 4.00% 85.32%, 6.00% 83.85%, 8.00% 82.52%, 10.00% 81.38%, 12.00% 80.45%, 14.00% 79.77%, 16.00% 79.34%, 18.00% 79.18%, 20.00% 79.29%, 22.00% 79.68%, 24.00% 80.32%, 26.00% 81.21%, 28.00% 82.32%, 30.00% 83.62%, 32.00% 85.08%, 34.00% 86.65%, 36.00% 88.29%, 38.00% 89.97%, 40.00% 91.63%, 42.00% 93.24%, 44.00% 94.74%, 46.00% 96.11%, 48.00% 97.30%, 50.00% 98.27%, 52.00% 99.02%, 54.00% 99.51%, 56.00% 99.73%, 58.00% 99.68%, 60.00% 99.35%, 62.00% 98.77%, 64.00% 97.93%, 66.00% 96.87%, 68.00% 95.61%, 70.00% 94.19%, 72.00% 92.64%, 74.00% 91.01%, 76.00% 89.34%, 78.00% 87.67%, 80.00% 86.04%, 82.00% 84.51%, 84.00% 83.11%, 86.00% 81.88%, 88.00% 80.85%, 90.00% 80.05%, 92.00% 79.50%, 94.00% 79.22%, 96.00% 79.21%, 98.00% 79.47%, 100.00% 79.99%);
+            padding: 150px  0 200px 0;
+            .contenedor-card{
+                h6{
+                    color: $verdeOscuro;
+                    font-size: 20px;
+                    width: 190px;
+                    line-height: 20px;
+                }
+    
             }
         }
         .idiomas{
@@ -516,8 +584,44 @@ form{
     }
     .idiomas-index{
         padding: 0;
-        margin-top: -195px;
+        margin-top: -186px;
         clip-path: polygon(100% 100%, 0% 100% , 0.00% 4.73%, 2.00% 4.84%, 4.00% 5.01%, 6.00% 5.25%, 8.00% 5.54%, 10.00% 5.88%, 12.00% 6.25%, 14.00% 6.64%, 16.00% 7.03%, 18.00% 7.42%, 20.00% 7.79%, 22.00% 8.12%, 24.00% 8.40%, 26.00% 8.63%, 28.00% 8.79%, 30.00% 8.88%, 32.00% 8.90%, 34.00% 8.84%, 36.00% 8.71%, 38.00% 8.52%, 40.00% 8.26%, 42.00% 7.95%, 44.00% 7.60%, 46.00% 7.22%, 48.00% 6.83%, 50.00% 6.44%, 52.00% 6.05%, 54.00% 5.70%, 56.00% 5.38%, 58.00% 5.12%, 60.00% 4.91%, 62.00% 4.77%, 64.00% 4.71%, 66.00% 4.71%, 68.00% 4.79%, 70.00% 4.95%, 72.00% 5.16%, 74.00% 5.44%, 76.00% 5.76%, 78.00% 6.12%, 80.00% 6.51%, 82.00% 6.90%, 84.00% 7.29%, 86.00% 7.67%, 88.00% 8.01%, 90.00% 8.31%, 92.00% 8.56%, 94.00% 8.74%, 96.00% 8.86%, 98.00% 8.90%, 100.00% 8.87%);
+    }
+}
+.body-cambridge{
+    .display_flex-container{
+        gap:150px;
+        .container_title{
+            margin-top: 50px;
+        }
+    }
+    h5{
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    .container_form{
+        padding: 0;
+    }
+    form{
+        h5{
+            color: #347C52;
+            font-weight: 700;
+        }
+
+    }
+    .main_index{
+        margin-top: -104px;
+
+        .cards-modalidades-contenedor{
+
+            padding: 70px 0;
+        }
+        .glider-alumnos{
+            margin-top: 175px;
+        }
     }
 }
 
@@ -812,6 +916,7 @@ form{
 
         }
     }
+
     .body_idiomas{
         background-size: cover;
         .header_idiomas{
@@ -920,6 +1025,66 @@ display: none;
                 }           
                 }
         
+        }
+        .main_index{
+            .cards-modalidades-contenedor{
+                width: 100%;
+                align-items: center;
+                display: flex;
+                flex-direction: column; 
+                .contenedor-card{
+                    align-items: center;
+                    padding: 0;
+                    gap: 8px;
+                    width: 300px;
+                    height: 90px;
+                    background: none;
+                    border:none;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    box-shadow: none;
+                    h6{
+                        color: #fff;
+                        margin-top: 10px;   
+                        width: 250px;
+                        height: 90px;
+                        background-image: url('../multimedia/bg-mobile-card.png');
+                        border: solid 2px #fff;
+                        background-size: cover;
+                        padding: 18px 18px;
+                        box-shadow: #edf7f18f 3px 6px 20px 0px;
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    p, span, .contenedor-btn{
+                        display: none;
+                    }
+    
+                    .button-mobile{
+                        button{
+                            width: 90px;
+                            height: 90px;
+                            border: none;
+                            background-color: $naranja;
+                            color: #fff;
+                            font-weight: 500;
+                            box-shadow: #edf7f18f 3px 6px 20px 0px;
+                            border-radius: 20px;
+                        }
+                        
+                    }
+                }
+                .contenedor-card:hover{
+                    background:none;
+                    border: none;
+                    h6{
+                        color: $verdeOscuro;
+                        background-image: url('../multimedia/bg-hover-card-mobile.png');
+                    }
+                }
+            }
         }
         form{
             width: 100%;

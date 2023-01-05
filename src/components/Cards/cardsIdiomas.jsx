@@ -4,6 +4,7 @@ import React from 'react';
 // context
 import { useContext } from 'react';
 import { ModalContext } from '../../context/modalContext';
+
 import FormIdiomas from '../form/formIdiomas';
 const CardsIdiomas = () => {
     
@@ -61,7 +62,7 @@ const CardsIdiomas = () => {
             </div>
             <div className='contenedor-card'>
                 <img src="" alt="" />
-                <h6><strong>RUSO</strong></h6>
+                <h6><strong>ALEMÁN</strong></h6>
                 <p>Descripción y requisitos del curso</p>
                 <div className="contenedor-btn">
                     <button className='btn-principal' onClick={() => toggleModal()}>Lo quiero</button>
@@ -83,7 +84,7 @@ const CardsIdiomas = () => {
             </div>
             
         </div>        
-        <div className={modalOpen ? 'openModal modal' : 'closeModal'} id="exampleModal" tabIndex={"-1"} aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className={modalOpen ? 'openModal modal modalIdiomas' : 'closeModal'} id="exampleModal" tabIndex={"-1"} aria-labelledby="exampleModalLabel" aria-hidden="true">
         <FormIdiomas/>
         </div>
         </>

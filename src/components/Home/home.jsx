@@ -1,8 +1,10 @@
 import React from 'react';
-import Form from '../form/form';
 import CardsModalidades from '../Cards/cardsModalidades';
 import Alumnos from '../alumnos/alumnos';
 
+
+import ContactUs from '../form/form';
+ 
 import CarrouselMobile from '../crrouselMobile/carrouselMobile';
 const Home = () => {
     return (
@@ -12,12 +14,12 @@ const Home = () => {
                 <div className="display_flex-container">
                     <div className="container_title">
                         <h2>Let ’s enjoy english!</h2>
-                        <h1>HABLA COMO EXPERTO INGLÉS USA/UK </h1>
-                        <p className='light'>nuevas vacantes el próximo 15/01</p>
-                        <p className='strong'>reserva hoy y obtén el 10% de dscto.</p>
+                        <h1>TU ACADEMIA DE IDIOMAS EN BARCELONA</h1>
+                        <p className='light'>Para niños, jóvenes y adultos</p>
+                        <p className='strong'>Somos centro preparador oficial de exámenes de Cambridge</p>
                     </div>
                     <div className="container_form">
-                        <Form/>
+                        <ContactUs/>
                     </div>
                 </div>
             </div>
