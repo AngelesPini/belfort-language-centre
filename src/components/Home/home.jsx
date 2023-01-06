@@ -13,7 +13,7 @@ const Home = () => {
             <div className='header_index'>
                 <div className="display_flex-container">
                     <div className="container_title">
-                        <h2>Let ’s enjoy english!</h2>
+                        <h2>Let’s enjoy english!</h2>
                         <h1>TU ACADEMIA DE IDIOMAS EN BARCELONA</h1>
                         <p className='light'>Para niños, jóvenes y adultos</p>
                         <p className='strong'>Somos centro preparador oficial de exámenes de Cambridge</p>

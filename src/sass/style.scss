@@ -45,7 +45,6 @@
     margin: 0;
     padding: 0;
 
-    // background-image: url('../multimedia/bg-total.png');
 }
 body{
     background-size: cover;
@@ -201,7 +200,7 @@ button:hover{
         .blog-container{
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 50px;
             .contenedor-imagen{
                 display: flex;
                 place-content: center;
@@ -738,6 +737,7 @@ form{
     .navbar{
         padding: 16px 12px;
         justify-content: center;
+        display: flex;
         ul{
             gap: 10px;
             justify-content: center;
@@ -750,9 +750,14 @@ form{
                 text-decoration: none;
             }
         }
-        .navbar-brand{
+        .logo-web{
             display: none;
         }
+        .navbar-brand {
+            width: fit-content;
+            img {
+            width: 30px;
+        }}
     }
     .body_blog{
         .main-blog{
@@ -824,6 +829,7 @@ form{
             display: flex;
             flex-direction: column;
             padding: 50px 16px;
+            background-image: none;
             .display_flex-container{
             flex-direction: column;   
             gap: 50px;  
@@ -983,7 +989,7 @@ display: none;
                 border: solid 2px $naranja;
                 border-radius: 0px 20px 0 20px;
                 padding: 5px;
-                margin: 10px;
+                margin: 50px 10px 10px 10px;
                 box-shadow: $verdeOscuro 3px 6px 17px 0px;
                 img{
                     border-radius: 0px 20px 0 20px;
@@ -995,7 +1001,7 @@ display: none;
         background-size: cover;
         margin-top: 50px;
         .header_index{
-            background-image: url('../multimedia/bg-cambridge-mobile.jpg');
+            background-image: none;
             background-size: contain;
             padding: 100px 161px 0 161px;
             .display_flex-container{
@@ -1123,7 +1129,7 @@ display: none;
                     border: solid 2px $naranja;
                     border-radius: 0px 20px 0 20px;
                     padding: 5px;
-                    margin: 10px;
+                    margin: 50px 10px 10px 10px;
                     img{
                         border-radius: 0px 20px 0 20px;
                     }
@@ -1168,8 +1174,11 @@ display: none;
     .navbar{
         padding: 8px 16px;
         .navbar-brand{
-            img{
+            .logo-web{
                 width: 170px;
+            }
+            .logo-mobile{
+                display: none;
             }
         }
         ul{
@@ -1218,6 +1227,9 @@ display: none;
     }
 }
 @media (min-width: 769px){
+    .logo-mobile{
+        display: none;
+    }
     .footer{
         .footer-header{
             gap: 10px;
@@ -1351,7 +1363,15 @@ display: none;
         }
         .alumnos{
             .glider-alumnos{
-                margin-top: 300px!important;
+                margin-top: 150px!important;
+            }
+        }
+    }
+    .body-cambridge{
+        .main_index{
+            margin-top: -100px;
+            .glider-alumnos{
+                margin-top: 400px!important;
             }
         }
     }

@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 // recursos
 import Logo from '../../multimedia/logo.svg'
-
+import LogoMobile from '../../multimedia/logo-min.svg'
 
 const listOptions = [
     { text: "INICIO", route: "/" },
@@ -44,7 +44,7 @@ const Navbar = () => {
 
       return(
         <nav className="navbar">
-            <Link className='navbar-brand' to={'/'}><img src={Logo} alt="" /></Link>
+            <Link className='navbar-brand' to={'/'}><img src={Logo} alt="logo belfort language centre" className='logo-web'/><img src={LogoMobile} alt="logo belfort language centre" className='logo-mobile' /></Link>
         <ul id="ul" className="nav">
           {renderList()}
         </ul>

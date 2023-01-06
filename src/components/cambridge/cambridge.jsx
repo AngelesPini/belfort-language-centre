@@ -13,7 +13,7 @@ const Cambridge = () => {
                     <div className="container_title">
                         <h2>LA CERTIFICACIÓN MÁS PROFESIONAL</h2>
                         <h1>VALIDA TU INGLÉS AHORA</h1>
-                        <p className='light'>con el first certificate in english podrás prepararte para el próximo FCE </p>
+                        <p className='light'>Con el first certificate in english podrás prepararte para el próximo FCE </p>
                         <p className='light-dark'>(la máxima certificación en inglés)</p>
                     </div>
                     <div className="container_form">

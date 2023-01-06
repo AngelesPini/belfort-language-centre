@@ -9,7 +9,6 @@ import ResenaCuatro from '../../multimedia/resena-mob-4.webp'
 import ResenaCinco from '../../multimedia/resena-mob-5.webp'
 import ResenaSeis from '../../multimedia/resena-mob-6.webp'
 import ResenaSiete from '../../multimedia/resena-mob-7.webp'
-import ResenaOcho from '../../multimedia/resena-mob-8.webp'
 import ResenaNueve from '../../multimedia/resena-mob-9.webp'
 const CarrouselMobile = () => {
     return (
@@ -40,9 +39,6 @@ const CarrouselMobile = () => {
             </div>
             <div>
                 <img src={ResenaSiete} alt="" />
-            </div>
-            <div>
-                <img src={ResenaOcho} alt="" />
             </div>
             <div>
                 <img src={ResenaNueve} alt="" />
