@@ -18,7 +18,7 @@ const Blog = () => {
                         <div className="contenedor-texto">
                         
                             <Link to='/diezanos'><h5>10 años dedicados a la enseñanza de idiomas</h5></Link>
-                            <p>A cada uno de ustedes, los que nos prefirieron, los que nos eligieron, los que nos recomendaron... Los que nos han apoyado tanto durante todos estos años.</p>
+                            <p>A cada uno de ustedes, los que nos prefirieron, los que nos eligieron, los que nos recomendaron y los que nos han apoyado tanto durante todos estos años.</p>
                         </div>
                     </div>
                     <div className='blog-container'>
@@ -38,7 +38,7 @@ const Blog = () => {
                         <div className="contenedor-texto">
                         
                             <Link to='/school'><h5>Inicio de curso 2022-2023</h5></Link>
-                            <p>El próximo 19 de septiembre iniciaremos los cursos presenciales para los diferentes niveles de niños, adolescentes y adultos, con distintos horarios de tarde</p>
+                            <p>El próximo 19 de septiembre iniciaremos los cursos presenciales para los diferentes niveles de niños, adolescentes y adultos, con distintos horarios de tarde.</p>
                         </div>
                     </div>
                 </div>
